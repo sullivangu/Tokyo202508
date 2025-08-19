@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小小探险家的东京之旅</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+        
+        body {
+            font-family: "Noto Sans CJK SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #e74c3c;
+            border-left: 5px solid #e74c3c;
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+        
+        h3 {
+            color: #27ae60;
+            border-bottom: 2px solid #27ae60;
+            padding-bottom: 5px;
+        }
+        
+        h4 {
+            color: #8e44ad;
+            margin-top: 25px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 15px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        
+        .photo-tip {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        
+        .task-list {
+            background-color: #e8f5e8;
+            border-left: 4px solid #27ae60;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .historical-period {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        
+        .important-note {
+            background-color: #ffebee;
+            border: 1px solid #f44336;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .quiz-section {
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .page-break {
+            page-break-before: always;
+        }
+        
+        @media print {
+            body {
+                font-size: 12pt;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+            
+            h1, h2, h3 {
+                page-break-after: avoid;
+            }
+            
+            img {
+                max-height: 200px;
+                object-fit: contain;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>📱 PDF转换指南</h1>
+    
+    <div class="important-note">
+        <h3>🎯 如何将markdown文件转换为PDF</h3>
+        
+        <p><strong>方法1：使用在线转换工具（推荐）</strong></p>
+        <ol>
+            <li>访问 <strong>markdown-pdf.com</strong> 或 <strong>convertio.co</strong></li>
+            <li>上传您的 "东京探索之旅.md" 文件</li>
+            <li>选择输出格式为PDF</li>
+            <li>点击转换，下载生成的PDF文件</li>
+        </ol>
+        
+        <p><strong>方法2：使用Typora软件</strong></p>
+        <ol>
+            <li>下载安装Typora（支持Windows/Mac/Linux）</li>
+            <li>用Typora打开 "东京探索之旅.md" 文件</li>
+            <li>点击菜单栏 文件 → 导出 → PDF</li>
+            <li>选择保存位置，生成PDF</li>
+        </ol>
+        
+        <p><strong>方法3：使用VS Code</strong></p>
+        <ol>
+            <li>安装VS Code和"Markdown PDF"插件</li>
+            <li>打开markdown文件</li>
+            <li>按Ctrl+Shift+P，输入"markdown pdf"</li>
+            <li>选择"Markdown PDF: Export (pdf)"</li>
+        </ol>
+        
+        <p><strong>方法4：使用浏览器打印功能</strong></p>
+        <ol>
+            <li>用支持markdown的编辑器预览文件（如GitHub、GitLab等）</li>
+            <li>在浏览器中按Ctrl+P</li>
+            <li>选择"打印到PDF"</li>
+            <li>调整页面设置，保存PDF</li>
+        </ol>
+    </div>
+    
+    <div class="task-list">
+        <h3>📋 PDF优化建议</h3>
+        <ul>
+            <li>✅ 确保图片清晰度适中（避免文件过大）</li>
+            <li>✅ 设置合适的页边距（建议20mm）</li>
+            <li>✅ 选择A4纸张尺寸便于打印</li>
+            <li>✅ 检查中文字体显示是否正常</li>
+            <li>✅ 测试打印一页确认效果</li>
+        </ul>
+    </div>
+    
+    <div class="photo-tip">
+        <h3>📸 打印注意事项</h3>
+        <ul>
+            <li>建议使用彩色打印以获得最佳视觉效果</li>
+            <li>图片较多，建议双面打印节省纸张</li>
+            <li>可以考虑打印成小册子形式便于携带</li>
+            <li>重要页面可以单独打印并塑封保护</li>
+        </ul>
+    </div>
+    
+    <div class="historical-period">
+        <h3>📁 文件信息</h3>
+        <ul>
+            <li><strong>主文件：</strong>东京探索之旅.md（完整版，约35,000字）</li>
+            <li><strong>便携版：</strong>东京探索之旅_便携版.md（精简版，约7,000字）</li>
+            <li><strong>建议：</strong>完整版用于详细学习，便携版用于现场携带</li>
+        </ul>
+    </div>
+    
+    <div class="quiz-section">
+        <h3>🔧 技术说明</h3>
+        <p>由于当前环境中没有安装pandoc、wkhtmltopdf等PDF转换工具，我无法直接为您生成PDF文件。但上述方法都是经过验证的有效转换方案，推荐使用<strong>在线转换工具</strong>或<strong>Typora软件</strong>，操作简单且效果良好。</p>
+        
+        <p><strong>在线转换工具推荐：</strong></p>
+        <ul>
+            <li>markdown-pdf.com - 专业的markdown转PDF工具</li>
+            <li>convertio.co - 支持多种格式转换</li>
+            <li>pandoc.org/try - Pandoc官方在线工具</li>
+        </ul>
+    </div>
+</body>
+</html>
